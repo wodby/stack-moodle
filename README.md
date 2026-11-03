@@ -56,8 +56,9 @@ wodby stack validate-manifest stack.yml --org <org-id>
 
 Start from [Vanilla Moodle](https://github.com/moodle/moodle), or connect your own Moodle 5.3 repository.
 
-After the first deployment, open the site and finish Moodle's installer: accept the licence and create the
-administrator account. Do this right away, because until then anyone who opens the site can do it.
+Enter the administrator's password, and optionally a username and email, in the Moodle service's settings when you
+create the app. The first deployment installs Moodle with that account; Moodle's web installer is not used. A password
+that doesn't meet Moodle's password policy must be changed at the first sign-in.
 
 Moodle's cron runs in the `cron` worker. Uploaded files are kept on the shared `moodledata` volume.
 Enable Valkey to keep sessions out of the data volume.
