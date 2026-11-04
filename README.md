@@ -13,16 +13,9 @@ composition for Moodle.
 - [Wodby stack documentation](https://wodby.com/docs/2.0/stacks/)
 - [Stack manifest reference](https://wodby.com/docs/2.0/stacks/template/)
 
-## Start from a boilerplate
-
-Use one of the compatible boilerplates exposed by this stack's services to
-start with Wodby CI build configuration:
-
-- [Vanilla Moodle](https://github.com/moodle/moodle)
-
 ## Service definitions
 
-- [PHP (Moodle) service](https://github.com/wodby/service-moodle)
+- [Moodle service](https://github.com/wodby/service-moodle)
 - [Nginx (Moodle) service](https://github.com/wodby/service-moodle-nginx)
 - [MariaDB service](https://github.com/wodby/service-mariadb)
 - [NFS provisioner service](https://github.com/wodby/service-nfs-provisioner)
@@ -54,7 +47,9 @@ wodby stack validate-manifest stack.yml --org <org-id>
 
 ## Deploy this stack
 
-Start from [Vanilla Moodle](https://github.com/moodle/moodle), or connect your own Moodle 5.3 repository.
+The Moodle and Nginx services run the prebuilt [wodby/moodle](https://github.com/wodby/moodle) image, so there's no
+build and no repository to connect. New Moodle releases arrive as image updates, and the next deployment upgrades the
+database. Plugins and themes can't be added.
 
 Enter the administrator's password, and optionally a username and email, in the Moodle service's settings when you
 create the app. The first deployment installs Moodle with that account; Moodle's web installer is not used. A password
