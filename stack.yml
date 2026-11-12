@@ -2,6 +2,12 @@ name: moodle
 icon: moodle
 docs: https://wodby.com/docs/2.0/stacks/catalog/moodle/
 title: Moodle
+# The main stack of the Moodle variants: the catalog shows this next to the
+# link to it on the variants' pages.
+variantDescription: >-
+  Choose this when you don't need your own plugins or themes: it runs the
+  prebuilt Moodle image that Wodby keeps up to date, with no Git repository to
+  maintain and no builds.
 
 services:
 - name: moodle
