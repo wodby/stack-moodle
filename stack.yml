@@ -2,6 +2,7 @@ name: moodle
 icon: moodle
 docs: https://wodby.com/docs/2.0/stacks/catalog/moodle/
 title: Moodle
+category: collaboration
 # The main stack of the Moodle variants: the catalog shows this next to the
 # link to it on the variants' pages.
 variantDescription: >-
